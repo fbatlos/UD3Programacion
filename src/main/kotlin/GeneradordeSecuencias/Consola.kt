@@ -2,13 +2,25 @@ package GeneradordeSecuencias
 
 class Consola:IEntradaSalida {
     override fun mostrar(mensaje: String, salto: Boolean) {
-        TODO("Not yet implemented")
+        if (salto){
+            println(mensaje)
+        }else{
+            print(mensaje)
+        }
     }
 
-    override fun pedirNum(mensaje: String) {
-        TODO("Not yet implemented")
+    override fun pedirNum(mensaje: String): Int {
+        var numero:Int?
+        while (true){
+            mostrar(mensaje,false)
+             numero = readln().toIntOrNull()
+            if (numero != null){
+                return numero
+            }else{
+                println("No es un numero . ")
+            }
+        }
     }
-
 }
 
 
