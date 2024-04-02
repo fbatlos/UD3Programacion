@@ -3,9 +3,10 @@ package GeneradordeSecuencias
 fun main(){
     val consola = Consola()
 
-    val GeneradorSecuencias = GeneradorSecuencias(consola)
+    val generadorSecuencias = GeneradorSecuencias(consola)
 
-    val num = consola.pedirNum("Dime el numero de palabras que tendrá la frase : ")
+    val menu = Menu(consola, generadorSecuencias )
 
-    GeneradorSecuencias.mostrarSec(num)
+    menu.mostarMenu()
+    menu.opcionesMenu()
 }
