@@ -3,7 +3,7 @@ package GeneradordeSecuencias
 class GeneradorSecuencias(val consola:IEntradaSalida):IGeneradorSecuencias{
 
     lateinit var sec:Sequence<String>
-    val fraseCompleta = mutableListOf<String>()
+    private val fraseCompleta = mutableListOf<String>()
 
     override fun fraseIncremental(numero:Int) {
 
