@@ -1,11 +1,13 @@
 package GeneradordeSecuencias
 
 class Consola:IEntradaSalida {
-    override fun mostrar(mensaje: String, salto: Boolean) {
+    override fun mostrar(mensaje: String, salto: Boolean): String {
         if (salto){
             println(mensaje)
+            return mensaje
         }else{
             print(mensaje)
+            return mensaje
         }
     }
 
