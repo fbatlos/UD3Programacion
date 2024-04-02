@@ -22,7 +22,7 @@ class GeneradorSecuencias{
     }
 
     fun mostrarSec(secuencia:String){
-        println(secuencia)
+        consola.mostrar(secuencia,true)
     }
 }
 
