@@ -7,5 +7,5 @@ fun main(){
 
     val num = consola.pedirNum("Dime el numero de palabras que tendrá la frase : ")
 
-    GeneradorSecuencias.mostrarSec(GeneradorSecuencias.getSec(num))
+    GeneradorSecuencias.mostrarSec(num)
 }
